@@ -13,7 +13,6 @@
 
   @layer components {
     .card {
-      background-color: theme('colors.white');
-      box-shadow: theme('boxShadow.xl');
+        @apply text-gray-100 p-10;
     }
   }
