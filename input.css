@@ -9,7 +9,6 @@
     h2 {
       @apply text-xl;
     }
-    /* ... */
   }
 
   @layer components {
@@ -19,5 +18,7 @@
       padding: theme('spacing.6');
       box-shadow: theme('boxShadow.xl');
     }
-    /* ... */
+    .center-contents-auto {
+        justify-content: theme('');
+    }
   }
