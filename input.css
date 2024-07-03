@@ -13,6 +13,6 @@
 
   @layer components {
     .card {
-        @apply text-gray-100 p-10;
+        @apply text-gray-100 p-10 bg-slate-500;
     }
   }
