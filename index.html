@@ -8,62 +8,45 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Wrexr.com - Github Pages</title>
 </head>
-<script>
-  // grab everything we need
-const btn = document.querySelector(".mobile-menu-button");
-const sidebar = document.querySelector(".sidebar");
+<body class="bg-gray-900 text-white">
+  <div class="flex flex-col md:flex-row">
+      <!-- Sidebar -->
+      <div class="w-full md:w-64 h-auto md:h-screen bg-gray-800 p-5 flex-shrink-0">
+          <h1 class="text-2xl font-bold mb-10">Dashboard</h1>
+          <ul>
+              <li class="mb-4"><a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Home</a></li>
+              <li class="mb-4"><a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Profile</a></li>
+              <li class="mb-4"><a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Settings</a></li>
+              <li class="mb-4"><a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Logout</a></li>
+          </ul>
+      </div>
 
-// add our event listener for the click
-btn.addEventListener("click", () => {
-  sidebar.classList.toggle("-translate-x-full");
-});
+      <!-- Main Content -->
+      <div class="flex-1 p-5 md:p-10">
+          <!-- Header -->
+          <header class="flex flex-col md:flex-row items-center justify-between mb-10">
+              <h2 class="text-3xl font-semibold mb-4 md:mb-0">Welcome, User!</h2>
+              <button class="btn btn-primary">New Action</button>
+          </header>
 
-</script>
-<body>
-  
-  <div class="relative h-screen md:flex">
-
-    <!-- mobile menu bar -->
-    <div class="bg-gray-800 text-gray-100 flex justify-between items-center md:hidden">
-      <!-- logo -->
-        <a href="#" class="block p-4 text-white font-bold">Wrexr.com</a>
-        <!-- mobile menu button -->
-          <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-    </div>
-  
-    <!-- sidebar -->
-  
-    <div class="sidebar bg-gray-800 text-gray-100 w-64 px-2 space-y-6 py-4 absolute md:relative md:translate-x-0 inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out">
-  
-      <!-- logo -->
-      <a href="#" class="text-gray-100 flex items-center px-2">
-        <!--
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-        </svg>
-        -->
-        <span class="text-2xl font-bold px-2">Wrexr.com</span>
-      </a>
-      <!-- nav -->
-      <nav>
-        <a href="" class="block py-2 px-4 rounded hover:bg-gray-500 transition duration-200">Forside</a>
-        <a href="" class="block py-2 px-4 rounded hover:bg-gray-500 transition duration-200">Projekter</a>
-        <a href="" class="block py-2 px-4 rounded hover:bg-gray-500 transition duration-200">Link 3</a>
-        <a href="" class="block py-2 px-4 rounded hover:bg-gray-500 transition duration-200">Link 4</a>
-        <a href="" class="block py-2 px-4 rounded hover:bg-gray-500 transition duration-200">Link 5</a>
-      </nav>
-  
-    </div>
-  
-    <!-- content -->
-    <div class="flex-1 p-8 text-2xl font-bold text-gray-100 bg-slate-600">
-      <div class="h-screen">content goes here</div>
-    </div>
-  
+          <!-- Content Area -->
+          <div>
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div class="bg-gray-800 p-5 rounded shadow">
+                      <h3 class="text-xl font-bold mb-4">Card Title</h3>
+                      <p>Card content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="bg-gray-800 p-5 rounded shadow">
+                      <h3 class="text-xl font-bold mb-4">Card Title</h3>
+                      <p>Card content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <div class="bg-gray-800 p-5 rounded shadow">
+                      <h3 class="text-xl font-bold mb-4">Card Title</h3>
+                      <p>Card content goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
 </body>
 </html>
