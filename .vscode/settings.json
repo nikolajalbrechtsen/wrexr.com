@@ -1,6 +1,0 @@
-{
-    "git.enableSmartCommit": true,
-    "git.postCommitCommand": "push",
-    "gitdoc.enabled": true,
-    "liveServer.settings.port": 5501
-}
