@@ -7,6 +7,6 @@
         @vite('resources/css/app.css')
     </head>
     <body class="">
-    
+        div
     </body>
 </html>
