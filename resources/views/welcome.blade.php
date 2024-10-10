@@ -6,7 +6,7 @@
         <title>Wrexr.com</title>
         @vite('resources/css/app.css')
     </head>
-    <body class="">
+    <body class="bg-gray-500">
         
     </body>
 </html>
